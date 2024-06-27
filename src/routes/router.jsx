@@ -14,11 +14,11 @@ export const mainRoute = createBrowserRouter([
     element: <MainPageLayout />,
     children: [
       {
-        path: "home",
+        path: "/home",
         element: <HomePage />,
       },
       {
-        path: "newpost",
+        path: "/newpost",
         element: <NewPost />,
       },
     ],
