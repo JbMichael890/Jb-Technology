@@ -4,6 +4,7 @@ import { mainRoute } from "./routes/router";
 const App = () => {
   return (
     <div>
+      {/* tested */}
       <RouterProvider router={mainRoute} />
     </div>
   );
