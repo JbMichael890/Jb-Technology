@@ -21,6 +21,11 @@ const NewPostPage = () => {
         ...storePost,
         { logo: logoURL, title, image: imageURL, description },
       ]);
+      setLogo("")
+      setTitle("")
+      setImage("")
+      setDescription("")
+
     } else {
       alert("All Fields Are Require!");
     }
@@ -68,7 +73,7 @@ const NewPostPage = () => {
          
         </Wrapper>
       </Container>
-      <div><Button onClick={clearData} style={{backgroundColor: "purple"}}>Clear Data</Button></div>
+      <div><Button onClick={clearData} style={{backgroundColor: "purple",height:"30"}}>Clear Data</Button></div>
       <section>
         <NewEntry storePost={storePost} setStorePost={setStorePost} />
       </section>
